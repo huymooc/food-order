@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  padding: 1%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.clearfix {
+  float: none;
+  clear: both;
+}
+/* Form Container */
+.form-container {
+  background-color: #f9f9f9; /* Màu nền nhẹ */
+  padding: 30px;
+  border-radius: 10px; /* Bo góc */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+  max-width: 600px;
+  margin: 50px auto; /* Căn giữa */
+}
+
+/* Tiêu đề */
+.form-container h1 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Bảng */
+.tbl-30 {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Ô nhập liệu */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+/* Table Styles */
+.tbl-full {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 14px;
+  text-align: left;
+  background-color: #fff; /* Nền trắng cho bảng */
+  border-radius: 10px; /* Bo góc bảng */
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+}
+
+.tbl-full th,
+.tbl-full td {
+  border: 1px solid #ddd; /* Viền nhạt giữa các ô */
+  padding: 12px;
+  text-align: center; /* Căn giữa nội dung */
+}
+
+.tbl-full th {
+  background-color: #f44336; /* Màu nền đỏ cho tiêu đề */
+  color: white; /* Màu chữ trắng */
+  font-weight: bold;
+}
+
+.tbl-full tr:nth-child(even) {
+  background-color: #f9f9f9; /* Màu nền xen kẽ cho các hàng */
+}
+
+.tbl-full tr:hover {
+  background-color: #f1f1f1; /* Hiệu ứng hover */
+}
+
+.tbl-full td {
+  position: relative; /* Đảm bảo các phần tử bên trong không bị đè */
+  padding: 12px;
+  text-align: center;
+  vertical-align: middle; /* Căn giữa nội dung theo chiều dọc */
+}
+
+/* Status Label Styles */
+.tbl-full td label {
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 5px 0;
+}
+
+.tbl-full td label[style*="color: orange;"] {
+  background-color: #fff4e5; /* Nền cam nhạt cho trạng thái "On Delivery" */
+  color: orange;
+}
+
+.tbl-full td label[style*="color: green;"] {
+  background-color: #e6ffe6; /* Nền xanh nhạt cho trạng thái "Delivered" */
+  color: green;
+}
+
+.tbl-full td label[style*="color: red;"] {
+  background-color: #ffe6e6; /* Nền đỏ nhạt cho trạng thái "Cancelled" */
+  color: red;
+}
+.btn-order {
+  display: flex; /* Căn chỉnh các nút theo chiều ngang */
+  gap: 5px; /* Khoảng cách giữa các nút */
+  justify-content: center; /* Căn giữa các nút trong ô */
+  align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.btn-order a {
+  text-decoration: none;
+  padding: 5px 10px; /* Kích thước nút */
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: center;
+  display: inline-block;
+  white-space: nowrap; /* Đảm bảo nội dung nút không bị xuống dòng */
+}
+.btn-primary {
+  background-color: #1e90ff;
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.btn-primary:hover {
+  background-color: #3742fa;
+}
+
+.btn-secondary {
+  background-color: #4caf50; /* Màu xanh lá */
+  color: white;
+  padding: 8px 12px;
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  display: inline-block; /* Đảm bảo nút không bị đè */
+  margin: 5px 0; /* Thêm khoảng cách giữa nút và các phần tử khác */
+  white-space: nowrap; /* Đảm bảo nội dung nút không bị xuống dòng */
+}
+.btn-secondary:hover {
+  background-color: #2ed573;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng khi hover */
+}
+
+.btn-danger {
+  background-color: #e74c3c;
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  display: inline-block; /* Đảm bảo nút không bị đè */
+  white-space: nowrap; /* Đảm bảo nội dung nút không bị xuống dòng */
+}
+.btn-danger:hover {
+  background-color: #ff4757;
+}
+h1 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.success {
+  color: #2ed573;
+}
+.error {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+/* Dashboard Box Styles */
+.dashboard-box {
+  text-decoration: none; /* Loại bỏ gạch chân */
+  color: inherit; /* Giữ nguyên màu chữ */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-box:hover {
+  transform: scale(1.05); /* Phóng to nhẹ khi hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Thêm hiệu ứng đổ bóng */
+}
+
+.col-4 {
+  border: 1px solid #ddd; /* Thêm viền nhẹ */
+  border-radius: 10px; /* Bo góc */
+  padding: 20px;
+  background-color: #fff; /* Màu nền trắng */
+  margin: 10px;
+  cursor: pointer; /* Thay đổi con trỏ thành dạng tay khi hover */
+}
+
+/* CSS for Menu */
+.menu {
+  position: sticky; /* Giữ navbar cố định khi cuộn */
+  top: 0; /* Đặt vị trí cố định ở đầu trang */
+  z-index: 1000; /* Đảm bảo navbar luôn nằm trên các phần tử khác */
+  background-color: white; /* Màu nền của navbar */
+  padding: 5px 20px; /* Khoảng cách bên trong */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Thêm hiệu ứng đổ bóng */
+}
+.menu ul {
+  list-style-type: none;
+}
+.menu ul li {
+  display: inline;
+  padding: 1%;
+}
+.menu ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #ff6b81;
+}
+.menu ul li a:hover {
+  color: #ff4757;
+}
+.menu-logo {
+  width: 80px; /* Kích thước logo */
+  height: auto;
+  vertical-align: middle; /* Căn giữa logo với các mục menu */
+  margin-right: 50px; /* Khoảng cách giữa logo và các mục menu */
+}
+
+/* CSS for main-content */
+.main-content {
+  background-color: #f1f2f6;
+  padding: 3% 0;
+}
+
+.col-4 {
+  width: 18%;
+  background-color: white;
+  margin: 1%;
+  padding: 2%;
+  float: left;
+}
+
+/* CSS for Footer */
+.footer {
+  background-color: #ff4757;
+  color: white;
+  font-weight: bold;
+}
+
+/* CSS for Login */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Chiều cao tối thiểu bằng chiều cao màn hình */
+  background-color: #f1f2f6; /* Màu nền cho trang đăng nhập */
+}
+
+.login {
+  background: #fff;
+  color: #333;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  text-align: center;
+}
+.login h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #dd2476;
+}
+
+.login input[type="text"],
+.login input[type="email"],
+.login input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login input[type="submit"] {
+  background: #dd2476;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login input[type="submit"]:hover {
+  background: #ff512f;
+}
+
+.login p {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.login a {
+  color: #dd2476;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login a:hover {
+  text-decoration: underline;
+}
+.login-logo {
+  display: block;
+  margin: 0 auto; /* Căn giữa logo */
+  width: 100px; /* Đặt chiều rộng logo */
+  height: auto; /* Giữ tỉ lệ logo */
+  margin-top: 10px; /* Khoảng cách phía trên logo */
+}
+.text-right {
+  text-align: right;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+.text-right a {
+  text-decoration: none;
+  color: #ff4081; /* Màu hồng nổi bật */
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.text-right a:hover {
+  color: #e91e63; /* Màu đậm hơn khi hover */
+}
